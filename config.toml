@@ -1,9 +1,10 @@
 languageCode = "en-us"
 theme = "hello-friend-ng"
 # theme = "ananke"
-baseurl = "https://wegeek.fun"
+baseurl = "https://blog.wegeek.fun"
 
 [params]
+  baseurl = "https://blog.wegeek.fun"
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
