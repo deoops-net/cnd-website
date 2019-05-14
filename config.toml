@@ -1,59 +1,9 @@
+baseURL = "wegeek.fun"
 languageCode = "en-us"
-theme = "hello-friend-ng"
-# theme = "ananke"
-baseurl = "https://blog.wegeek.fun"
+title = "云原生开发者"
+theme = "basics"
 
 [params]
-  baseurl = "https://blog.wegeek.fun"
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
-
-  # Metadata mostly used in document's head
-  description = "Homepage and blog by Tom Dyu"
-  keywords = "homepage, blog, science, informatics, development, programming"
-  images = [""]
-
-  # Directory name of your blog content (default is `content/posts`)
-  contentTypeName = "posts"
-  # Default theme "light" or "dark"
-  defaultTheme = "dark"
-
-[languages]
-  [languages.en]
-    title = "云原生开发者"
-    subtitle = "A simple theme for Hugo"
-    keywords = "cloud native"
-    copyright = "Tom Dyu - All rights reserved"
-    readOtherPosts = "Read other posts"
-
-    [languages.en.params.logo]
-      logoText = "hello cloud native"
-      logoHomeLink = "https://wegeek.fun"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
-
-    # You can create a language based menu
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
-        identifier = "blog"
-        name = "Blog"
-        url = "/posts"
-
-# And you can even create generic menu
-[menu]
-  [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "/about"
-  [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
+    author = "Dyu(dayuoba@gmail.com),Lee(longlee@gmail.com)"
+    github = "dayuoba"
+    gitlab = "lifei"

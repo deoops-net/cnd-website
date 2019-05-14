@@ -1,0 +1,6 @@
+[submodule "themes/yinwang"]
+	path = themes/yinwang
+	url = https://github.com/chinanf-boy/gohugo-theme-yinwang.git
+[submodule "themes/basics"]
+	path = themes/basics
+	url = https://github.com/arjunkrishnababu96/basics.git
