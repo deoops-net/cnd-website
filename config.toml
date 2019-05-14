@@ -1,4 +1,4 @@
-baseURL = "wegeek.fun"
+baseURL = "https://blog.wegeek.fun"
 languageCode = "en-us"
 title = "云原生开发者"
 theme = "basics"

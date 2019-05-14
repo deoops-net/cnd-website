@@ -3,34 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>wegeek.fun/post/</loc>
+    <loc>https://blog.wegeek.fun/post/</loc>
     <lastmod>2019-05-13T18:19:42+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>wegeek.fun/</loc>
+    <loc>https://blog.wegeek.fun/</loc>
     <lastmod>2019-05-13T18:19:42+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>wegeek.fun/post/how_container_save_your_money/</loc>
+    <loc>https://blog.wegeek.fun/post/how_container_save_your_money/</loc>
     <lastmod>2019-05-13T18:19:42+08:00</lastmod>
   </url>
   
   <url>
-    <loc>wegeek.fun/post/my-first-post/</loc>
+    <loc>https://blog.wegeek.fun/post/my-first-post/</loc>
     <lastmod>2019-04-28T13:58:05+08:00</lastmod>
   </url>
   
   <url>
-    <loc>wegeek.fun/categories/</loc>
+    <loc>https://blog.wegeek.fun/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>wegeek.fun/tags/</loc>
+    <loc>https://blog.wegeek.fun/tags/</loc>
     <priority>0</priority>
   </url>
   

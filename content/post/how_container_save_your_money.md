@@ -4,8 +4,6 @@ date: 2019-05-13T18:19:42+08:00
 draft: false
 ---
 
-# 容器、容器编排是如何为你的公司省钱的？
-
 翻译至：[https://medium.com/kubernetes-tutorials/how-can-containers-and-kubernetes-save-you-money-fc66b0c94022](https://medium.com/kubernetes-tutorials/how-can-containers-and-kubernetes-save-you-money-fc66b0c94022)
 
 翻译：于洋 

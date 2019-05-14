@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 云原生开发者</title>
-    <link>wegeek.fun/post/</link>
+    <link>https://blog.wegeek.fun/post/</link>
     <description>Recent content in Posts on 云原生开发者</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 May 2019 18:19:42 +0800</lastBuildDate>
     
-	<atom:link href="wegeek.fun/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.wegeek.fun/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>容器、容器编排是如何为你的公司省钱的？</title>
-      <link>wegeek.fun/post/how_container_save_your_money/</link>
+      <link>https://blog.wegeek.fun/post/how_container_save_your_money/</link>
       <pubDate>Mon, 13 May 2019 18:19:42 +0800</pubDate>
       
-      <guid>wegeek.fun/post/how_container_save_your_money/</guid>
-      <description>容器、容器编排是如何为你的公司省钱的？ 翻译至：https://medium.com/kubernetes-tutorials/how-can-containers-and-kubernetes-save-you-money-fc66b0c94022
+      <guid>https://blog.wegeek.fun/post/how_container_save_your_money/</guid>
+      <description>翻译至：https://medium.com/kubernetes-tutorials/how-can-containers-and-kubernetes-save-you-money-fc66b0c94022
 翻译：于洋 校稿：李飞 阅读时间：约15min
 容器及容器编排技术正在大规模地改变多节点分布式环境中应用程序的开发部署及管理方式。
 自2014年谷歌开源Kubernetes以来，很多有影响力的科技公司开始决定将其基于容器的工作负载迁移到k8s平台，从而促进其在社区中的日益普及和认可。
@@ -49,10 +49,10 @@ Kubernetes是一个成熟的平台，具有在公共，私有，混合云，多�
     
     <item>
       <title>My First Post</title>
-      <link>wegeek.fun/post/my-first-post/</link>
+      <link>https://blog.wegeek.fun/post/my-first-post/</link>
       <pubDate>Sun, 28 Apr 2019 13:58:05 +0800</pubDate>
       
-      <guid>wegeek.fun/post/my-first-post/</guid>
+      <guid>https://blog.wegeek.fun/post/my-first-post/</guid>
       <description> hello cloud native </description>
     </item>
     
