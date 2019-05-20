@@ -1,10 +1,8 @@
 ---
-title: "Nodejs_docker_workflow"
+title: "Nodejs Docker 工作流"
 date: 2019-05-20T16:55:23+08:00
 draft: false
 ---
-
-# Node.js Docker 工作流
 
 翻译至：[https://medium.com/@guillaumejacquart/node-js-docker-workflow-12febcc0eed8](https://medium.com/@guillaumejacquart/node-js-docker-workflow-12febcc0eed8)
 
