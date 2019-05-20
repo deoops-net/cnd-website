@@ -5,9 +5,14 @@ draft: false
 ---
 
 翻译至：[https://medium.freecodecamp.org/how-to-make-your-startups-cloud-more-stable-4-practical-devops-tips-823e4202518c](https://medium.freecodecamp.org/how-to-make-your-startups-cloud-more-stable-4-practical-devops-tips-823e4202518c)
+
 翻译：李飞
+
 校稿：于洋 
+
 阅读时间：约15min
+
+![](/img/4_dev_points/4dp_0.png)
 
 在创业领域，当涉及到时间投入的分配问题时，这其中往往需要找到一个平衡。 我曾经遇到过很多这种情况，由于需要发布最小化可行产品(minimum viable product, MVP)时，DevOps的相关工作内容往往会占据一席之地。
 
@@ -15,7 +20,7 @@ draft: false
 
 但是这里有一些事情应该提前完成（或者至少要提前考虑）。 因为没有比在创业过程中发生云基础设施瘫痪从而导致业务停滞类似的事情更糟糕的了。
 
-![图片](https://uploader.shimo.im/f/YhjErXA812Y7vpvC.png!thumbnail)
+![](/img/4_dev_points/4dp_1.png)
 ### **建议 #1: 定期进行数据备份**
 对于任何关心拥有持久数据的初创公司来说，这都是必须的。 您需要定期自动备份关键数据，否则您可能失去的不仅仅是文件，还会失去客户的信任，这将影响您未来的发展。
 
@@ -24,7 +29,7 @@ draft: false
 **数据库备份**
 通常采用定时执行脚本的形式，例如每晚运行的cron作业，并像私有S3对象存储那样在云上的某处推送数据库转储。你也可以使用一些更精美的备份解决方案，但这些解决方案往往更注重为企业服务，并且会花费您大量的时间和金钱（不适合初创公司）。
 
-![图片](https://uploader.shimo.im/f/Kp9S2hh5CHMOa3vI.png!thumbnail)
+![图片](/img/4_dev_points/4dp_2.png)
 
 **磁盘快照**
 当所有其他方法都失败时，如果您有磁盘副本，通常会安全。大多数主要云提供商都有适当的解决方案，可让您按照自己选择的时间周期进行磁盘快照，**因此请尽量避免编写直接连接到云服务的API的脚本**，因为你还要负责维护它们。
@@ -41,14 +46,14 @@ draft: false
 总而言之，我建议使用基于云提供商的解决方案，因为这些解决方案将保证稳定，易于设置，并且在初创公司的规模上不会花费额外的费用（译者注：很多看似免费的或者开源的服务也会引入额外的隐形成本，比如迭代成本，维护成本等）。
 
 ### **建议＃3：转向CI / CD (持续交付 / 持续继承) 工作流🚚**
-![图片](https://uploader.shimo.im/f/YBXWTfxLbpk8Mre6.png!thumbnail)
+![图片](/img/4_dev_points/4dp_3.png)
 
 我在创业公司看到的一个常见的现象是发布代码的过程非常挣扎。许多人还没有把时间花在用DevOps方法构建一个稳定的发布工作流，这意味着被推送到版本控制的代码是手动测试，构建和发布的，这对开发团队来说既容易出错，也会耗费时间。
 
 **持续集成 - 确保每次修改都不会中断**
 持续集成的关键是拥有一个在每次代码准备好提交时都会能随时启动的管道。
 
-![图片](https://uploader.shimo.im/f/ceHZDfybeNkDgUiJ.png!thumbnail)
+![图片](/img/4_dev_points/4dp_4.png)
 1. 代码确保提交到版本控制
 2. 像Jenkins这样的自动化构建系统会创建应用程序的构建环境
 3. 执行自动测试以验证系统是否仍能正常工作
@@ -66,7 +71,7 @@ draft: false
 **如果您没有全面的测试套件，我建议就不要考虑CI / CD，直到这个问题得到解决**。随着测试覆盖率的提高，当您看到生产中的错误越来越少时，您将开始看到主要的效率提升。 这是你能够转到CI / CD管道的其他部分的关键所在。
 
 ### **建议**＃4：容器化你的应用🚚
-![图片](https://uploader.shimo.im/f/5C8F2lOdp5oLlqNd.png!thumbnail)
+![图片](/img/4_dev_points/4dp_5.png)
 容器技术让应用程序的自动构建变得轻松化
 
 不要害怕容器技术，其本身很复杂，如果没有基本知识就很难理解，但利用这个技术并将应用程序转换为容器实际上是非常微不足道的。
