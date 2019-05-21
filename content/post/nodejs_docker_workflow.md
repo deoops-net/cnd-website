@@ -1,10 +1,8 @@
 ---
-title: "Nodejs_docker_workflow"
+title: "Nodejs Docker 工作流"
 date: 2019-05-20T16:55:23+08:00
 draft: false
 ---
-
-# Node.js Docker 工作流
 
 翻译至：[https://medium.com/@guillaumejacquart/node-js-docker-workflow-12febcc0eed8](https://medium.com/@guillaumejacquart/node-js-docker-workflow-12febcc0eed8)
 
@@ -27,7 +25,7 @@ draft: false
 我的这些见解也适用于除Node.js之外的其他技术栈，主要来自小型到大型应用程序开发的经验，因为我一直在努力增加工作和个人项目的实现流程。
 
 ## 1.使用Docker优化生产工件
-Docker的主要功能之一是打包您的应用，以便它可以部署在任何与Docker兼容的环境中(`译者注：这听起来是不是很像Java？JVM负责帮你解决底层的适配。`)。您的Docker镜像应包含应用程序运行所需的一切。
+Docker的主要功能之一是打包您的应用，以便它可以部署在任何与Docker兼容的环境中(译者注：这听起来是不是很像Java？JVM负责帮你解决底层的适配。)。您的Docker镜像应包含应用程序运行所需的一切。
 
 但是，同时当您和您的IT团队在使用Docker在生产中发布您的应用时，您可以进行某些优化，用以提高应用程序的性能，增强安全性并减少程序包的占用空间。如：
 
@@ -37,7 +35,7 @@ Alpine linux是一个基于musl libc和busybox的轻量级Linux发行版。使�
 
 Alpine发行版的轻量化也让黑客只有较少的攻击面。
 
-请注意，如果使用专门用glibc(`译者注：alpine镜像是musl libc `)编译的软件，可能会遇到一些问题，如node-alpine仓库中所述（https://github.com/mhart/alpine-node#caveats）
+请注意，如果使用专门用glibc(译者注：alpine镜像是musl libc )编译的软件，可能会遇到一些问题，如node-alpine仓库中所述（https://github.com/mhart/alpine-node#caveats）
 
 但是，如果您在容器内部使用单个技术栈（如Node），这不应该影响您的应用程序，强烈建议将其用于云原生应用程序（请参阅https://12factor.net/）
 
@@ -49,13 +47,13 @@ Alpine发行版的轻量化也让黑客只有较少的攻击面。
 RUN npm install --only=production
 ```
 
-还可以使用.dockerignore(`译者注：类似.gitignore,出于ignore文件中的列表将不会被包含`)文件来排除生产所不需要的文件，例如从Dockerfile中拉取(`译者注：如：RUN npm i`)的node_modules，测试文件，文档，docker文件本身等等......
+还可以使用.dockerignore(译者注：类似.gitignore,出于ignore文件中的列表将不会被包含)文件来排除生产所不需要的文件，例如从Dockerfile中拉取(译者注：如：RUN npm i)的node_modules，测试文件，文档，docker文件本身等等......
 
 如果您使用像Babel这样的工具用来在Node应用中使用ES6或更新的语法，那么在Dockerfile中的npm run构建脚本中执行转换脚本部分，并在构建成功执行后删除源代码。使用Docker多级构建可以更加优雅地完成这些步骤，您可以在下面的代码中看到这些步骤（文档：https：//docs.docker.com/develop/develop-images/multistage-build/）。
 
 * 将源码复制(步骤)到容器映像之前运行npm install
 
-这允许docker运行时缓存源码层下面的所有依赖项的层(`译者注：简单的说就是把不经常变动的部分放到Dockerfile的上面指令中去，这样之前的指令构建过就会被缓存起来，之后的构建都会用缓存，这样就提升了每次构建的速度`)。这意味着如果您的源代码比依赖配置更频繁地更新（可能），您的Docker构建时间平均会快得多。
+这允许docker运行时缓存源码层下面的所有依赖项的层(译者注：简单的说就是把不经常变动的部分放到Dockerfile的上面指令中去，这样之前的指令构建过就会被缓存起来，之后的构建都会用缓存，这样就提升了每次构建的速度)。这意味着如果您的源代码比依赖配置更频繁地更新（可能），您的Docker构建时间平均会快得多。
 
 Node.js官方文档有一个关于如何为Node.js应用程序构建docker镜像的简洁教程，他们在这里提到了这一部分：
 
@@ -63,7 +61,7 @@ Node.js官方文档有一个关于如何为Node.js应用程序构建docker镜像
 
 * 使用指定版本的Node docker镜像
 
-即使您可能没有意识到这一点，您的应用也可能与特定版本的语言库（Node或任何其他技术栈）紧密耦合。为了防止docker重新构建的时候拉取更新而导致崩溃，您应该确定要在生产平台上运行的Node版本(`译者注：如果你用的是latest tag的镜像，这种情况就很可能发生`)。
+即使您可能没有意识到这一点，您的应用也可能与特定版本的语言库（Node或任何其他技术栈）紧密耦合。为了防止docker重新构建的时候拉取更新而导致崩溃，您应该确定要在生产平台上运行的Node版本(译者注：如果你用的是latest tag的镜像，这种情况就很可能发生)。
 
 这里有一个gist，其中包含了如何使用ES6和Babel来的docker化Node程序的基本文件（https://gist.github.com/guillaumejacquart/676627dd862e70fd6e45e8361f513abf）
 

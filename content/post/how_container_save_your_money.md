@@ -6,7 +6,9 @@ draft: false
 翻译至：[https://medium.com/kubernetes-tutorials/how-can-containers-and-kubernetes-save-you-money-fc66b0c94022](https://medium.com/kubernetes-tutorials/how-can-containers-and-kubernetes-save-you-money-fc66b0c94022)
 
 翻译：于洋 
+
 校稿：李飞
+
 阅读时间：约15min
 
 容器及容器编排技术正在**大规模**地改变**多节点分布式**环境中应用程序的开发部署及管理方式。
