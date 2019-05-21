@@ -1,7 +1,7 @@
 ---
 title: "理解语义化版本规范"
 date: 2019-05-21T10:15:02+08:00
-draft: true
+draft: false
 ---
 
 翻译至：[https://medium.com/bhargav-bachina-angular-training/understanding-semantic-versioning-spec-635b87397eec](https://medium.com/bhargav-bachina-angular-training/understanding-semantic-versioning-spec-635b87397eec)
