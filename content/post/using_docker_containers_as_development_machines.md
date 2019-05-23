@@ -1,7 +1,7 @@
 ---
-title: "Using_docker_containers_as_development_machines"
+title: "用Docker做开发环境"
 date: 2019-05-23T12:16:29+08:00
-draft: true
+draft: false
 ---
 
 翻译至：[https://medium.com/rate-engineering/using-docker-containers-to-run-a-distributed-application-locally-eeabd360bca3](https://medium.com/rate-engineering/using-docker-containers-to-run-a-distributed-application-locally-eeabd360bca3)
@@ -113,7 +113,7 @@ Named Volume 就是自己取名字手动创建一个数据卷，负责容器的�
 
 事实上，这不是我们想要的。 我们需要在主机上存在依赖项文件夹，这样我们的代码编辑器就不会在外部库已经导入后仍提示代码错误。
 
-![](/img/$article/dFwKOSWDvJsWXEDM.png)
+![](/img/using_docker_containers_as_development_machines/dFwKOSWDvJsWXEDM.png)
 
 当然，如果你认为这不会妨碍你的开发体验，那么你会很高兴这么做，因为依赖已经存在于容器中，并且服务器可以在那里编译。但是如果你想解决这个问题，那就意味着我们需要找到一种方法来满足以下3个标准：
 
@@ -131,7 +131,7 @@ Named Volume 就是自己取名字手动创建一个数据卷，负责容器的�
 ### **另一个替代解决方案：在容器启动时安装依赖项**
 由于容器创建是在卷安装之后进行的，因此我们可以在此步骤中安装依赖项，而不会在之后覆盖它们。它将依赖项安装过程保留在容器中，但由于绑定安装，它们在主机端可用。 但是，这样做也会延长容器启动所需的时间。
 
-![](img/$article/8KRsQihwbUwwGqFm.png)
+![](/img/using_docker_containers_as_development_machines/8KRsQihwbUwwGqFm.png)
 
 所以请注意，在解决方案1中复制和在解决方案2中安装所需的时间都会随着依赖项的数量而增加。
 
