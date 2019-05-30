@@ -92,7 +92,7 @@ ENTRYPOINT ["python", "app.py"]
 
 ```Dockerfile
 # 从基础镜像安装依赖
-FROM python:3.7.3 AS build
+FROM python:3.7.3 AS builder
 RUN mkdir /install
 WORKDIR /install
 COPY requirements.txt /requirements.txt
@@ -100,10 +100,12 @@ RUN pip install --install-option="--prefix=/install" -r /requirements.txt
 
 # 从alpine镜像运行程序
 FROM python:3.7.3-alpine
-COPY --from=build /install /usr/local
+# 注意from, 这里我们把之前安装好的依赖“偷”过来
+COPY --from=builder /install /usr/local
+
+# 最后就可以添加源码层，并运行了
 COPY . /app
 WORKDIR /app
-
 
 ENTRYPOINT ["python", "app.py"]
 ```
@@ -112,11 +114,15 @@ ENTRYPOINT ["python", "app.py"]
 
 ### one more thing
 
-有读者不太清楚为什么这里体积变小了，其实这里的最终体积是很接近`alpine`基础镜像体积的，只不过因为上面已经提到`python:3.7.3-alpine`下构建会有一些问题，这里用了一个稍微巧妙一点的方法，**我们从一个完善的基础镜像来安装好我们的所有依赖，然后在`alpine`镜像里把这些构建好的依赖拉过来就行了**，这也是docker分步构建的一个主要目的之一，说到这你再回头看看上面的`Dockerfile`是不是更清晰了？
+有读者不太清楚为什么这里体积变小了，其实这里的最终体积是接近`alpine`基础镜像体积的，只不过因为上面说了`alpine`下构建会有一些问题，这里用了一个稍微巧妙一点的方法：
+
+1. 用一个更完善的基础镜像(builder)执行构建过程比如`python:3.7.3`
+2. 用另一个精简镜像(runner)来存放我们的源码比如`python:3.7.3-alpine`
+3. 从builder里面把依赖偷到runner里面
+4. runner运行项目
+
+总结一下就是：**我们从一个完善的基础镜像来安装好我们的所有依赖，然后在`alpine`精简镜像里把这些构建好的依赖COPY过来**。这也是docker**分步构建**的主要优点之一（因为最终的镜像只依赖最后一步的基础镜像也就是`python:3.7.3-alpine`），说到这你再回头看看上面的`Dockerfile`是不是更清晰了？
 
 ## 总结
 
 如果你是一个开发者，之前你还未使用过或者重视过容器化，那么从现在开始你就应该专注这一领域的知识了，因为容器不是运维的玩具，在持续交付中的一个非常有用的工具，他就是给开发者用的。对于本篇你如果有什么疑问或者建议都欢迎留言评论！
-
-
-
