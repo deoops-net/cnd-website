@@ -1,7 +1,7 @@
 ---
 title: "docker初学者指南一:用detach模式让容器在后台运行"
 date: 2019-05-30T18:03:16+08:00
-draft: true
+draft: false
 ---
 翻译至：[https://medium.com/the-code-review/dockers-detached-mode-for-beginners-c53095193ee9](https://medium.com/the-code-review/dockers-detached-mode-for-beginners-c53095193ee9)  
 翻译：李飞  
