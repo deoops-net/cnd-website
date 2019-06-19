@@ -49,7 +49,13 @@ draft: false
 假设如果Twitter为用户配置文件信息和推文信息维护在两个不同的微服务，那么如果想要显示用户页面上的最后一条推文日期时间，每当用户在Users表中推文发送任何新推文时就要存储/更新推文的日期和时间，所以我们需要在推文和用户信息微服务中维护分布式事务。
 
 关注我们：
-https ：//www.facebook.com/walkingtreetech/https：  //www.linkedin.com/company/walking-tree-Technologies https://twitter.com/walkingtreetech https://www.youtube。 COM /信道/ UCH5y9upqT2M7uWwgRWjCWBg
+https://www.facebook.com/walkingtreetech/
+
+https://www.linkedin.com/company/walking-tree-Technologies
+
+https://twitter.com/walkingtreetech
+
+https://www.youtube.com/channel/UCH5y9upqT2M7uWwgRWjCWBg
 
 另一种方法是通过向推文微服务发出单独的请求以获取最新推文的日期时间并动态显示获取到最后一条推文的日期，这样我们就可以避免在用户表中存储时间而实现跨微服务的事务。
 

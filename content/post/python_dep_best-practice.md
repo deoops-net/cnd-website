@@ -1,10 +1,9 @@
 ---
-title: "Python_dep_best Practice"
+title: "python包管理-最佳实践"
 date: 2019-06-19T15:24:27+08:00
 draft: false
 ---
 
-# python包管理-最佳实践
 
 原文链接：[https://medium.com/python-pandemonium/better-python-dependency-and-package-management-b5d8ea29dff1](https://medium.com/python-pandemonium/better-python-dependency-and-package-management-b5d8ea29dff1)
 
