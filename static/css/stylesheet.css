@@ -48,6 +48,7 @@ pre code, code {
   /* white-space: pre; */
   overflow-x: auto;
   color: #c32424;
+  word-break: break-all;
 }
 
 ul li, ol li {
