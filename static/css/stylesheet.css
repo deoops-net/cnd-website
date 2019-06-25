@@ -34,6 +34,7 @@ p {
   font-size: 1.5rem;
   line-height: 2.38rem;
   margin: 2.38rem 0;
+  word-break: break-all;
 }
 
 img {
