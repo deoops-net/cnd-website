@@ -45,7 +45,7 @@ img {
 pre code, code {
   font-size: 1.45rem;
   font-family: 'Menlo', monospace;
-  white-space: pre;
+  /* white-space: pre; */
   overflow-x: auto;
   color: #c32424;
 }
