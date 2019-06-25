@@ -1,7 +1,7 @@
 ---
 title: "还在用虚拟机装Linux？Docker就够了"
 date: 2019-06-25T12:06:17+08:00
-draft: true
+draft: false
 ---
 
 ![](https://cdn-images-1.medium.com/max/1600/1*Wy-ZVvLETOg0-__caB22HQ.png)
