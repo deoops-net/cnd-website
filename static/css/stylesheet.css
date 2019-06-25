@@ -44,7 +44,7 @@ img {
 
 pre code, code {
   font-size: 1.45rem;
-  font-family: 'Ubuntu Mono', monospace;
+  font-family: 'Menlo', monospace;
   white-space: pre;
   overflow-x: auto;
 }
