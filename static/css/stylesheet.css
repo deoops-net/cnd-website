@@ -1,18 +1,64 @@
-body {
+html, body {
     font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
     margin: auto;
     max-width: 50em;
+    font-size: .625em;
 }
 
+h6 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 36px 0;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
 
 p {
-  font-size: 18px;
-  line-height: 36px;
+  font-size: 1.5rem;
+  line-height: 2.38rem;
+  margin: 2.38rem 0;
 }
 
 img {
   width: 100%;
   margin: 50px 0;
+}
+
+
+pre code, code {
+  font-size: 1.45rem;
+  font-family: 'Ubuntu Mono', monospace;
+  white-space: pre;
+  overflow-x: auto;
+}
+
+ul li, ol li {
+  font-size: 1.45rem;
+  line-height: 2.3rem;
+  margin: 1.15rem 0;
+}
+
+
+/* 列表页字体 */
+#posts {
+  font-size: 1.5rem;
 }
 
 #page-title {
@@ -52,40 +98,16 @@ img {
   list-style-type: none;
 }
 
-h1 {
-  font-size: 2rem;
-}
 
-h2 {
-  font-size: 1.7rem;
-  margin: 36px 0;
-}
 
-h3 {
-  font-size: 1.4rem;
-}
 
-h4  {
-  font-size: 1.2rem;
-}
 
-h5  {
-  font-size: 1rem;
-}
 
-h6  {
-  font-size: 0.8rem;
-}
 
 .row {
   margin-bottom: 18px;
 }
 
-code {
-  font-family: 'Ubuntu Mono', monospace;
-  white-space: pre;
-  overflow-x: auto;
-}
 
 pre {
   overflow-x: auto;
