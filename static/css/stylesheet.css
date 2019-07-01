@@ -5,6 +5,12 @@ html, body {
     font-size: .625em;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: content-box; 
+}
+
 h6 {
   font-size: 1.2rem;
 }
