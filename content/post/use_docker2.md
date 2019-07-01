@@ -1,5 +1,5 @@
 ---
-title: "还再用虚拟机安装Linux？Docker就够了！（下）"
+title: "还在用虚拟机装Linux？Docker就够了！（下）"
 date: 2019-06-30T21:10:12+08:00
 draft: false
 ---
