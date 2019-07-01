@@ -1,0 +1,119 @@
+html, body {
+    font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: auto;
+    max-width: 50em;
+    font-size: .625em;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 36px 0;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2.38rem;
+  margin: 2.38rem 0;
+  word-break: break-all;
+}
+
+img {
+  width: 100%;
+  margin: 50px 0;
+}
+
+
+pre code, code {
+  font-size: 1.45rem;
+  font-family: 'Menlo', monospace;
+  /* white-space: pre; */
+  overflow-x: auto;
+  color: #c32424;
+  word-break: break-all;
+}
+
+ul li, ol li {
+  font-size: 1.45rem;
+  line-height: 2.3rem;
+  margin: 1.15rem 0;
+}
+
+
+/* 列表页字体 */
+#posts {
+  font-size: 1.5rem;
+}
+
+#page-title {
+    text-align: center;
+    margin: 36px 0;
+}
+
+#page-title h1 a {
+    color: black;
+    font-size: 2.7rem;
+}
+
+.post a {
+    color: black;
+}
+
+#author-name h6 a {
+  color: black;
+  font-weight: normal;
+  font-size: small;
+}
+
+#page-title a:hover, .post a:hover {
+    text-decoration: underline;
+}
+
+.date-time-title {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.blog-post-content {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.posts_listing li {
+  list-style-type: none;
+}
+
+
+.row {
+  margin-bottom: 18px;
+}
+
+pre {
+  overflow-x: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid lighten(#111, 90);
+  background-color: #efefef
+}
+
+footer  {
+  text-align: center;
+}

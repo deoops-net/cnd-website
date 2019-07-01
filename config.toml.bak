@@ -1,0 +1,9 @@
+baseURL = "https://blog.wegeek.fun"
+languageCode = "en-us"
+title = "云原生开发者"
+theme = "hugo-paper"
+googleAnalytics = "UA-140529951-1"
+
+[params]
+    author = "Dyu(dayuoba@gmail.com),Lee(longlee@gmail.com)"
+    github = "deoops-net"
