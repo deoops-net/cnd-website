@@ -1,7 +1,7 @@
 html, body {
     font-family: "SF Pro SC","HanHei SC","SF Pro Text","Myriad Set Pro","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
     margin: auto;
-    /* max-width: 52em; */
+    max-width: 50em;
     font-size: .625em;
 }
 
