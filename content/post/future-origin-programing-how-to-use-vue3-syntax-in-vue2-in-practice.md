@@ -4,11 +4,6 @@ date: 2019-07-10T18:31:30+08:00
 draft: false
 ---
 
----
-title: 面向未来编程，如何在 Vue2 中使用 Vue3 的语法[实践篇]
-date: 2019-07-10 13:34:07
-tags: [vue3, vue]
----
 面向未来编程(Future-Oriented Programming)，[vue-function-api](https://github.com/vuejs/vue-function-api) 提供开发者在 Vue2.x 中使用 Vue3 的语法逻辑开发应用。(为方便以下以 Vue2 表示)
 
 本文不对文档 api 对过多说明，仅讨论在项目实践中遇到的问题。比较两者的区别是对 Vue3 写法最快的了解，下面通过对比同一个功能在 Vue2 与 Vue3 的区别。
@@ -577,3 +572,5 @@ export default {
 
 [Vue Function API](https://github.com/vuejs/vue-function-api)
 [通过基于函数的 API 来复用组件逻辑](https://zhuanlan.zhihu.com/p/68477600)
+
+Vincent.W 撰
